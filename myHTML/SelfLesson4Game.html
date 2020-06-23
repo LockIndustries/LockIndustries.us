@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    With any luck this document will soon sow an example of creating 2d game imagery in HTML code.
+-->
+<head>
+    <meta charset="utf-8"/>
+    <title>Game Page</title>
+    <meta name="Game Page" content="width=device-width, initial-scale=1.0" />
+
+<!--
+    Next we have to define a style to set up our canvas???? HELP
+-->
+    <style>
+            canvas {
+                border: 1px solid #d3d3d3;
+                background-color: #f1f1f1;
+            }
+    </style>
+</head>
+
+
+<body onload="startGame()"> <!-- This is the crucial call up command-->
+    
+    
+<!-- Note the need to use the script tag -->
+<script>
+
+function startGame() {
+    myGameArea.start();
+  }
+  
+  var myGameArea = {
+    canvas : document.createElement("canvas"),
+    start : function() {
+      this.canvas.width = 480;
+      this.canvas.height = 270;
+      this.context = this.canvas.getContext("2d");
+      document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+    }
+  }
+
+
+/*
+function startGame() {
+    myGameArea.start();
+    myGamePiece = new component(30, 30, "red", 10, 120);
+    myGamePiece.gravity = 0.05;
+    myScore = new component("30px", "Consolas", "black", 280, 40, "text");
+    
+  }
+
+    var myGameArea = {
+      canvas : document.createElement("canvas"),
+          start : function() {
+            this.canvas.width = 480;
+            this.canvas.height = 270;
+            this.context = this.canvas.getContext("2d");
+            document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+            this.frameNo = 0;
+        }
+<!-- THIS IS A PIECE OF THE EDIT THAT DOESN'T WANT TO PLAY NICE HELP
+      clear : function() {
+        this.context.clearRect(0, 0, this.canvas.width, this.canvas.height); -->
+        }
+
+    }
+*/
+</script>
+
+<p>
+    There should be a blank canvas above this.
+</p>
+
+<p>
+        <!-- Lastly, we need to know how to create links in text -->
+        <!-- This creates a local link -->
+        <br />
+        Click <a href="SelfLesson1text.html">here</a> to go to the First page of this demostrative code.
+        <br />
+        Click <a href="SelfLesson2Graphic.html">here</a> to go to the Second page.
+        <br />
+        Click <a href="SelfLesson3form.html">here</a> to go to the Third Page.
+        <br />
+        Click <a href="SelfLesson4game.html">here</a> to go to the Fourth page.
+        
+        <br />		
+        <!-- This creates an outside link-->
+        Click <a href="https://lockerlawoffice.com/">here</a> to go to LLO page.
+</p>
+
+</body>		<!--This is the Body End -->
+</html>		<!--This is the Page End -->
