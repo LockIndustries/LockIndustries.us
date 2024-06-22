@@ -49,8 +49,6 @@ body {
   }
 
   .topnav a {
-
-    
     color: #559696;
     text-align: center;
     padding: 14px 16px;
@@ -62,6 +60,12 @@ body {
     background-color: #458686;
     color: #000000;
   }
+
+  /* .topnav a.split {
+    float: right;
+    background-color: #04155c;
+    color: #e3e3a7;
+  } */
 
   .dropdown {
     clear:left;
